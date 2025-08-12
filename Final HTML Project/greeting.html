@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./websiteResources/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="ForMyPersonalPage.css">
+    <title>Welcome</title>
+</head>
+
+<body>
+
+    <div id="main-nav-div">
+        <nav id="main-nav">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li>|</li>
+                <li><a href="./JoJo.html">JoJo page</a></li>
+                <li>|</li>
+                <li><a href="./greeting.html">Welcome page</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <section class="text-body">
+            <h1>Welcome</h1>
+            <p><span id="morningAfternoonOrEvening">Good day</span> <span  id="yourName">(add your name with the form below),</span>
+                It's&nbsp;<span id="currentTime">0:00:00 AM</span>&nbsp;on&nbsp;<span id="currentDate">01/01/2000</span>, and it's <span id="currentWeather">weather loading...</span> right now. <br>
+                Btw, you last visited on <span id="lastDate">today</span> at <span id="lastTime">right now</span>. 
+            </p>
+
+            <h3>input your name for a personalized greeting</h3>
+            <form id="nameForm">
+                <label for="name"></label>
+                <input type="text" name="name" id="name" autocomplete="on">
+                <button>Submit</button>
+            </form>
+        </section>
+    </div>
+    
+    <script src="./Scripts/NameFunctionalityScript.js"></script>
+    <script src="./Scripts/TimeFunctionalityScript.js"></script>
+    <script src="./Scripts/WeatherFunctionalityScript.js"></script>
+
+</body>
+</html>
